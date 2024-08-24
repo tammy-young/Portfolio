@@ -9,7 +9,11 @@ import SideBar from './components/sidebar';
 import FileExplorer from './components/explorer';
 import FileSwitcher from './components/switcher';
 import Footer from './components/footer';
-import Home from './pages/home.js'
+
+import Home from './pages/home.js';
+import Experience from './pages/experience.js';
+import Projects from './pages/projects.js';
+import Contact from './pages/contact.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -22,30 +26,21 @@ function App() {
 
 	return (
 		<Router>
-
 			<SearchBar />
-
 			<main className='flex row' style={{ color: constants.textColor, maxHeight: constants.mainHeight, minHeight: constants.mainHeight, maxWidth: constants.mainWidth }}>
-
 				<SideBar />
-				
-				<FileExplorer />
-
-				<FileSwitcher />
-
-				<Routes>
-					<Route path="/" element={<Home />} />
-                    <Route path="/github" element={<Home />} />
-                    <Route path="/projects" element={<Home />} />
-                    <Route path="/contact" element={<Home />} />
-                    <Route path="/about" element={<Home />} />
-                    <Route path="/settings" element={<Home />} />
-				</Routes>
-
+                <FileExplorer />
+                <div className="col" style={{ padding: "0px" }}>
+                    <FileSwitcher />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/experience" element={<Experience />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </div>
 			</main>
-
 			<Footer />
-
 		</Router>
 	);
 }

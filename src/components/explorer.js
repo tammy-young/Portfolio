@@ -47,7 +47,7 @@ function FileExplorer() {
 
                     <div style={{ fontSize: constants.fontSize, width: '110%' }}>
                         <FileExplorerItem page="home" />
-                        <FileExplorerItem page="github" />
+                        <FileExplorerItem page="experience" />
                         <FileExplorerItem page="projects" />
                         <FileExplorerItem page="contact" />
                     </div>

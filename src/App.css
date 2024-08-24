@@ -55,3 +55,7 @@
 	color: #eeeeee !important;
 	cursor: pointer;
 }
+
+.file-tab:hover .close-span > svg[class*="close-tab"] {
+	visibility: visible;
+}

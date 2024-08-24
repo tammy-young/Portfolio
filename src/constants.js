@@ -1,6 +1,6 @@
 
 // heights
-export const headerHeight = '40px';
+export const headerHeight = '41px';
 export const footerHeight = '20px';
 export const mainHeight = 'calc(100vh - ' + headerHeight + ' - ' + footerHeight + ')';
 export const mainWidth = 'calc(100vw + 10px)';
@@ -31,11 +31,19 @@ export const pages = {
 		sidebarIcon: "mdi:files",
 		url: "/"
 	},
-	'github': {
-		label: "github.js",
+	'experience': {
+		label: "experience.js",
 		icon: "logos:javascript",
 		sidebarIcon: "iconoir:github",
-		url: "/github"
+		url: "/experience"
+	},
+	'github': {
+		sidebarIcon: "iconoir:github",
+		url: "https://github.com/tammy-young"
+	},
+	'linkedin': {
+		sidebarIcon: "mdi:linkedin",
+		url: "https://www.linkedin.com/in/tammyqyoung/"
 	},
 	'projects': {
 		label: "projects.py",

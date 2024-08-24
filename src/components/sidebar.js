@@ -10,7 +10,7 @@ function SideBarIcon({ page }) {
     const sideBarIconSize = '25';
 
     return (
-        <a href={ pageURL }>
+        <a href={ pageURL } target={ page == 'github' || page == 'linkedin'? "_blank" : "" }>
             <div className="border-l-2 p-2 max-sm:pl-2">
                 <div className="p-2 max-sm:pl-2">
                     <Icon icon={ iconName } width={ sideBarIconSize } height={ sideBarIconSize } className='highlightable-btn' style={{ color: constants.secondaryTextColor }} />
@@ -37,7 +37,7 @@ function SideBar() {
                 <SideBarIcon page="projects" />
 
                 {/* Contact Information */}
-                <SideBarIcon page="contact" />
+                <SideBarIcon page="linkedin" />
 
             </div>
 
