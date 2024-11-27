@@ -59,3 +59,7 @@
 .file-tab:hover .close-span > svg[class*="close-tab"] {
 	visibility: visible;
 }
+
+.file-explorer-file {
+	max-width: min-content !important;
+}

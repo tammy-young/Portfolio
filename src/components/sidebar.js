@@ -10,7 +10,7 @@ function SideBarIcon({ page }) {
     const sideBarIconSize = '25';
 
     return (
-        <a href={ pageURL } target={ page == 'github' || page == 'linkedin'? "_blank" : "" }>
+        <a href={ pageURL } target={ pageURL[0] != "/"? "_blank" : "" }>
             <div className="border-l-2 p-2 max-sm:pl-2">
                 <div className="p-2 max-sm:pl-2">
                     <Icon icon={ iconName } width={ sideBarIconSize } height={ sideBarIconSize } className='highlightable-btn' style={{ color: constants.secondaryTextColor }} />
@@ -24,9 +24,9 @@ function SideBarIcon({ page }) {
 function SideBar() {
 
     return (
-        <aside className="col-auto flex flex-col justify-between" style={{ backgroundColor: constants.compColor1, paddingRight: 0 }} height={ constants.mainHeight }>
+        <aside className="col-span-1 justify-between max-w-1" style={{ backgroundColor: constants.compColor1 }}>
             
-            <div className="flex flex-col items-start justify-center gap-y-1 ">
+            <div className="items-start justify-center gap-y-1 ">
                 {/* Main Page */}
                 <SideBarIcon page="home" />
 
@@ -41,7 +41,7 @@ function SideBar() {
 
             </div>
 
-            <div className="flex flex-col items-center justify-center" style={{ bottom: constants.bottomIconStart, position: 'absolute' }}>
+            <div className="items-center justify-center" style={{ bottom: constants.bottomIconStart, position: 'absolute' }}>
 
                 {/* About Me */}
                 <SideBarIcon page="about" />

@@ -5,7 +5,7 @@ import '../App.css';
 function Footer() {
 
     return (
-        <div className="row" style={{ backgroundColor: constants.compColor2, color: constants.textColor, fontSize: constants.fontSize, maxWidth: constants.mainWidth }}>
+        <div className="row-span-1" style={{ backgroundColor: constants.compColor2, color: constants.textColor, fontSize: constants.fontSize, maxWidth: constants.mainWidth }}>
             
             <div className="col-auto selectable-footer" style={{ paddingLeft: '24px' }}>
                 <Icon icon="pajamas:branch" color={ constants.textColor } width={ constants.fileTypeIconSize } height={ constants.fileTypeIconSize } />

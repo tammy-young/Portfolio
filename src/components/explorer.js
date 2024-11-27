@@ -24,9 +24,9 @@ function FileExplorerItem({ page }) {
 function FileExplorer() {
 
     return(
-        <div className="col-2 flex flex-col" style={{ backgroundColor: constants.compColor1, maxHeight: constants.mainHeight, paddingLeft: 0 }}>
+        <div className="col-span-1 grid grid-rows-2" style={{ backgroundColor: constants.compColor1, maxHeight: constants.mainHeight, paddingLeft: 0 }}>
             
-            <div className='row'>
+            <div className='row-span-1'>
                 <div className="col" style={{ maxWidth: '10px' }}></div>
                 <div className="col" style={{ color: constants.secondaryTextColor, fontSize: constants.secondaryFontSize, height: '5px', paddingTop: '5px' }}>
                     EXPLORER
@@ -36,7 +36,7 @@ function FileExplorer() {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row-span-1">
 
                 <div className="col" style={{ maxWidth: '10px' }}>
                     <Icon icon="ri:arrow-down-s-line" color={ constants.textColor } width="20" height="20" />
